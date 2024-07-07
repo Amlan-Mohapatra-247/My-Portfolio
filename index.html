@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b613955dfe.js" crossorigin="anonymous"></script>
+    <title>Amlan-Portfolio</title>
+</head>
+<body>
+    <div class="headr">
+        <nav class="nvb">
+            <ul class="nav_list">
+                <li class="lnk"><a href="#contact">Contact</a></li>
+                <li class="lnk"><a href="#projects">Projects</a></li>
+                <li class="lnk"><a href="#indexp">Experience</a></li>
+                <li class="lnk"><a href="#skills">Skills</a></li>
+                <li class="lnk"><a href="#academics">Academics</a></li>
+                <li class="lnk"><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="home">
+        <img src="img.png" class="pro">
+        <p class="about">My name is Amlan Mohapatra. I am currently pursuing my B.Tech in Computer Science and Engineering at National Institute of Technology Silchar. I was born in Cuttack and brought up in Pune.<br>
+        <br>Since my childhood I had a fascination about the technological world and its workings.This early interest sparked a lifelong passion for understanding and leveraging technology to solve real-world problems.<br>This curiousness only grew with time and has helped me to develop my problem solving skills.<br>
+        <br>I consider myself a keen observer, always analyzing situations with an analytical approach. Learning has been a continuous journey for me, and I strive to ensure my skills grow steadily, aiming for both linear and exponential growth where possible.<br>
+        <br>I am a proficient coder and a web developer. My technical skills are complemented by my passion for reading, blogging, and traveling.<br>I am committed to continuous improvement and lifelong learning, aiming to contribute meaningfully to the technological domain while growing personally and professionally.<br></p>
+    </div>
+
+
+    <div id="academics">
+        <h1>Academics</h1>
+        <br>
+        <div class="acad">
+            <img src="DAVP.png" class="lg">
+            <h2>High School: CBSE</h2>
+            <br>
+            <h4>D.A.V. Public School Pune</h4>
+            <br>
+            June 2018 - March 2019
+            <p class="per">Percentage : 95.4%</p>
+        </div>
+        <br>
+        <div class="acad">
+            <img src="DAVP.png" class="lg">
+            <h2>Intermediate: CBSE</h2>
+            <br>
+            <h4>D.A.V. Public School Pune</h4>
+            <br>
+            June 2019 - June 2021
+            <p class="per">Percentage : 92.6%</p>
+        </div>
+        <br>
+        <div class="acad">
+            <img src="NITS.png" class="lg">
+            <h2>Bachelor of Technology: Computer Science and Engineering</h2>
+            <br>
+            <h4>National Institute of Technology Silchar</h4>
+            <br>
+            July 2021 - May 2025
+            <p class="per">Current CGPA : 8.58</p>
+        </div>
+    </div>
+
+
+    <div id="skills">
+        <h1>Skills</h1>
+        <div class="skl">
+            <div class="left-skl">
+                <h2>Technical Skills</h2>
+                <ul class="skill_list">
+                    <li><button class="skillset" onclick="prog()">Programming</button></li><br>
+                    <li><button class="skillset" onclick="webdev()">Web Development</button></li><br>
+                    <li><button class="skillset" onclick="dbms()">Database Management</button></li><br>
+                    <li><button class="skillset" onclick="toth()">Others</button></li><br>
+                </ul><br>
+                <h2>Soft Skills</h2>
+                <ul class="skill_list">
+                    <li><button class="skillset" onclick="lam()">Leadership & Management</button></li><br>
+                    <li><button class="skillset" onclick="soc()">Social</button></li><br>
+                    <li><button class="skillset" onclick="misc()">Miscellaneous</button></li><br>
+                </ul><br>
+            </div>
+            <div class="right-skl" id="bq">
+                <p id="change"><br><br><br><br><br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspClick a skill to get its details</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="indexp">
+        <h1>Industry Experience</h1><br>
+        <div class="iel" id="iel">
+            <ul class="experience-list">
+                <li><button class="experience-btn1" onclick="acc()">Applied Cloud Computing</button></li>
+                <li><button class="experience-btn" onclick="mt()">MinfyTech</button></li>
+            </ul>
+            <div class="expinfo">
+                <img class="expimg" src="acc.png">
+                <h2>Applied Cloud Computing</h2><br>
+                <h4>Digitalization Intern</h4>
+                December 2023 - February 2024<br><br>
+                <strong>Virtual Trial Room for Indian Dresses</strong><br><br>
+                <p><b>Overview: </b>The Virtual Trial Room is an innovative platform designed to provide users with a seamless and immersive experience for trying on traditional Indian dresses virtually. By leveraging AWS services, this project ensures a scalable, secure, and top-notch user experience.</p>
+                <br><b>Key Features</b><br>
+                <ul style="margin-left: 20px;">
+                    <li>Realistic Dress Trials: Simulates how Indian dresses look and fit in a virtual environment.</li>
+                    <li>Wide Range of Attires: Includes sarees, lehengas, kurtas, and more.</li>
+                    <li>Personalized Recommendations: AI-powered suggestions based on user preferences and body type.</li>
+                </ul>
+                <br><b>Technology Stack</b><br>
+                <ul style="margin-left: 20px;">
+                    <li>AWS S3: For storing images, 3D models, and assets.</li>
+                    <li>AWS EC2: Hosting applications and running computations.</li>
+                    <li>AWS SageMaker: Training and deploying machine learning models.</li>
+                </ul><br>
+                <p>
+                    To set up a virtual trial room, created an S3 bucket using the AWS Management Console to store datasets, images, and trained models. Configured the correct permissions for secure access.
+                    <br>Next, launched an EC2 instance, choosing an appropriate AMI and instance type, and configured security groups and network settings. Connected to the instance using SSH, install necessary software like Python and TensorFlow, and clone the project repository. Set up environment variables for smooth operation and secure S3 access.
+                </p><br>
+                <p>
+                    Store datasets, images, and models in the S3 bucket, using AWS SDKs for easy access and management. Preprocessed the data, divide it into training, validation, and test sets, and use SageMaker for model training.
+                    <br>SageMaker offers a scalable environment for training, and monitoring progress ensures effective learning. Once training is complete, save the trained models to the S3 bucket and deploy them using SageMaker endpoints for real-time inference, allowing the virtual trial room to provide immediate results.
+                </p><br>
+                <p>
+                    Continuous maintenance is crucial for smooth operation. Used AWS CloudWatch to monitor performance and health, and regularly update models and application code to improve accuracy and add features. Implemented robust security measures to protect user data and ensure compliance with regulations.
+                    <br>This approach ensures the virtual trial room operates efficiently, delivering a seamless and secure user experience.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <div class="proj">
+            <h1>Projects</h1>
+            <div class="projcol">
+                <button class="projacc" onclick='window.open("https://64c0eb9400ce444b6dc41512--melodious-narwhal-3cc631.netlify.app/");return false;'>
+                    <h3>Spotify Retro(Clone)</h3>
+                </button>
+                <button class="projacc" onclick='window.open("https://64c0ea7137bd0f485f30fba9--joyful-cendol-7873fa.netlify.app/");return false;'>
+                    <h3>Netflix Landing Page(Clone)</h3>
+                </button>
+                <button class="projacc" onclick='window.open("https://github.com/Amlan-Mohapatra-247/forever-notebook");return false;'>
+                    <h3>Forever Notebook</h3>
+                </button>
+            </div>
+            <div class="projcol">
+                <button class="projacc" onclick='window.open("https://64c0ed1600ce444d92c415a9--candid-marzipan-c5adb6.netlify.app/");return false;'>
+                    <h3>TicTacToe Game</h3>
+                </button>
+                <button class="projacc" onclick='window.open("https://64c0edd6fa205c4df42ea0d0--papaya-profiterole-f084f3.netlify.app/");return false;'>
+                    <h3>Weather App</h3>
+                </button>
+                <button class="projacc" onclick='window.open("https://64c0e953b92a5746cf7d0f7c--aquamarine-dusk-948c61.netlify.app/");return false;'>
+                    <h3>Day Finder</h3>
+                </button>
+            </div>
+            <div class="projcol">
+                <button class="projacc" onclick='window.open("https://github.com/Amlan-Mohapatra-247/Diabetes-Predictor-ml-project-");return false;'>
+                    <h3>Diabetes Predictor</h3>
+                </button>
+                <button class="projacc" onclick='window.open("https://64c0e633288a3543a71d87f2--chipper-seahorse-8a282a.netlify.app/");return false;'>
+                    <h3>Calculator</h3>
+                </button>
+                <button class="projacc" onclick='window.open("https://github.com/Amlan-Mohapatra-247/Cricket-Club-DBMS-CRUD");return false;'>
+                    <h3>Cricket Club DBMS</h3>
+                </button>
+            </div>
+        </div>
+        <div class="ach">
+            <h1>Achievments</h1>
+            <ul class="skill_list">
+                <li>Internshala Programming with C & C++ certificate</li>
+                <li>Internshala Web Development Certificate</li>
+                <li>Internshala Python Programming Certificate</li>
+                <li>400+ DSA questions solved on LeetCode</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="contact">
+        <h1>Reach Out</h1>
+        <div class="skl">
+            <div class="left-skl" style="font-size: x-large; text-align: center;">
+                <br><br><br>
+                <i class="fa-solid fa-phone"></i>&nbsp&nbsp&nbsp+ 91 8888349543
+                <br><br><br>
+                <a href="#" onclick='window.open("https://github.com/Amlan-Mohapatra-247");return false;'><i class="fa-brands fa-github" style="color: black;"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="#" onclick='window.open("https://www.linkedin.com/in/amlan-mohapatra/");return false;'><i class="fa-brands fa-linkedin" style="color: #0077b5;"></i></a>
+                <br><br><br>
+                <a href="#" onclick='window.open("https://www.facebook.com/amlan.mohapatra2003/");return false;'><i class="fa-brands fa-facebook" style="color: #4267b2;"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="#" onclick='window.open("https://www.instagram.com/amlanmohapatra247/");return false;'><i class="fa-brands fa-instagram" style="color: purple;"></i></a>
+                <br><br><br>
+                <button class="dwnld"><a href="Amlan Mohapatra_NIT SILCHAR_2112032_resume.pdf" download class="dwnld">Download Resume</a></button>
+            </div>
+            <div class="right-skl">
+                <form action="https://formsubmit.co/mohapatra.amlan@gmail.com" method="POST" class="frm">
+                    <input type="email" name="email" placeholder="Email Address" required class="typ"><br><br>
+                    <input type="text" name="name" placeholder="Your Name" required class="typ"><br><br>
+                    <textarea name="" id="" cols="50" rows="20" placeholder="Your Message" required class="typr"></textarea><br><br>
+                    <button type="submit" class="sbmt">Send</button>
+               </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footr">
+        Copyright &copy Amlan Mohapatra
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!---1536 X 864--->

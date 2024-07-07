@@ -1,0 +1,18 @@
+technical
+   programming
+      c,c++,python,java
+   webdev
+      html,css,js,bootstrap,php,AJAX,reactjs
+   databse
+      mysql,mongoDb
+   others
+      figma,ms office
+
+non-technical
+   social
+      publicity,outreach,public speaking
+   leadership & management
+      head,event management
+   others
+      marketing
+   
